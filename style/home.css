@@ -126,3 +126,206 @@ nav a {
   border-radius: 50%;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
+
+
+/* project page*/
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #555;
+  margin-top: 0.5rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.filter-buttons {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.filter-buttons button {
+  background-color: #f3f4f6;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.filter-buttons button.active,
+.filter-buttons button:hover {
+  background-color: #2563eb;
+  color: white;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.project-card {
+  background-color: #f9fafb;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h3 {
+  margin: 0 0 10px;
+  font-size: 1.1rem;
+}
+
+.card-content p {
+  color: #444;
+  font-size: 0.95rem;
+}
+
+.tags {
+  margin-top: 10px;
+}
+
+.tags span {
+  background: #e5e7eb;
+  color: #333;
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-size: 0.75rem;
+  margin-right: 5px;
+}
+
+.card-links {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-links a {
+  text-decoration: none;
+  color: #2563eb;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Section titles */
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.section-subtitle {
+  text-align: center;
+  max-width: 600px;
+  margin: 10px auto 40px;
+  color: #555;
+}
+
+/* Grid layout */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+/* Skill card */
+.skill-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+}
+
+.skill-card h3 {
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.skill-bar {
+  margin-bottom: 15px;
+}
+
+.skill-bar span {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.skill-bar div {
+  background-color: #e5e7eb;
+  border-radius: 6px;
+  height: 8px;
+  overflow: hidden;
+}
+
+.skill-bar div div {
+  background-color: #2563eb;
+  height: 100%;
+  border-radius: 6px;
+}
+
+/* Soft skills cards */
+.soft-skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.soft-card {
+  background-color: white;
+  text-align: center;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+}
+
+.soft-card i {
+  font-size: 1.8rem;
+  color: #2563eb;
+  margin-bottom: 10px;
+}
+
+.soft-card h4 {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.soft-card p {
+  font-size: 0.9rem;
+  color: #555;
+}
