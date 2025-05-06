@@ -11,10 +11,17 @@ body {
 }
 
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 20px 40px;
   align-items: center;
+  padding: 20px 40px;
+  background-color: #ffffff;
+  
+  
 }
 
 .logo {
@@ -40,7 +47,7 @@ nav a {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 80px 40px;
+  padding:160px 5px;
   flex-wrap: wrap;
 }
 
@@ -394,7 +401,6 @@ nav a {
 
 
 /* Contact page*/
-
 .contact-section {
   background-color: #f9fbfc;
   padding: 60px 20px;
@@ -513,4 +519,3 @@ nav a {
     flex-direction: column;
   }
 }
-
