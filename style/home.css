@@ -48,12 +48,14 @@ nav a {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding:160px 5px;
+  
   flex-wrap: wrap;
 }
 
 .intro {
   max-width: 600px;
+  padding:130px 5px;
+  
 }
 
 .intro h1 {
@@ -118,18 +120,19 @@ nav a {
 .profile img {
   width: 250px;
   height: 250px;
-  border-radius: 50%;
+  border-radius: 60%;
   object-fit: cover;
   border: 5px solid white;
   box-shadow: 0 0 15px rgba(0,0,0,0.1);
+
 }
 
 .code-icon {
   position: absolute;
   right: -20px;
   bottom: 10px;
-  background-color: #2b6ef7;
-  color: white;
+
+ 
   padding: 12px;
   border-radius: 50%;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
