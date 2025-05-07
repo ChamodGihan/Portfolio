@@ -20,14 +20,22 @@ header {
   align-items: center;
   padding: 20px 40px;
   background-color: #ffffff;
-  
-  
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .logo {
   font-size: 1.7rem;
   font-weight: bold;
   color: #2b6ef7;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 nav ul {
@@ -42,6 +50,50 @@ nav a {
   color: #333;
   font-weight: 500;
   font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #2b6ef7;
+}
+
+.toggle-theme {
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.toggle-theme:hover {
+  color: #2b6ef7;
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 80px;
+    right: 40px;
+    flex-direction: column;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    gap: 20px;
+    display: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
 }
 
 
