@@ -106,12 +106,23 @@ nav a {
 
 }
 
-.socials i {
-  font-size: 1.2rem;
-  margin-right: 15px;
-  color: #333;
-  cursor: pointer;
+.social-icons {
+  display: flex;
+  gap: 20px;
+  padding: 20px 20px;
 }
+
+.social-icons a {
+  font-size: 20px;
+  color: #000000;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #0039cb;
+}
+
+
 
 .profile {
   position: relative;
