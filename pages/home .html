@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Chamod Gihan | Portfolio</title>
   <link rel="stylesheet" href="../style/home.css"/>
+  <link rel="stylesheet" href="../style/script.js">
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
@@ -19,7 +20,8 @@
         <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><i class="fas fa-moon"></i></li>
+        <li><i class="fas fa-moon" id="theme-toggle"></i></li>
+
       </ul>
     </nav>
   </header>
@@ -302,6 +304,31 @@
       <a href="#hero" class="scroll-top"><i class="fas fa-arrow-up"></i></a>
     </div>
   </footer>
+
+
+
+  <script>
+  const toggle = document.getElementById('theme-toggle');
+  const body = document.body;
+
+  // Check localStorage for saved mode
+  if (localStorage.getItem('theme') === 'dark') {
+    body.classList.add('dark-mode');
+    toggle.classList.replace('fa-moon', 'fa-sun');
+  }
+
+  toggle.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+    if (body.classList.contains('dark-mode')) {
+      toggle.classList.replace('fa-moon', 'fa-sun');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      toggle.classList.replace('fa-sun', 'fa-moon');
+      localStorage.setItem('theme', 'light');
+    }
+  });
+</script>
+
   
 </body>
 </html>
